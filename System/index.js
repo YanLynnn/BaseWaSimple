@@ -23,9 +23,6 @@ const fetch = require("node-fetch")
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
 const { isUrl, generateMessageTag, getBuffer, getSizeMedia, await, sleep, reSize } = require('./lib/myfunc')
 
-//====[ Password Settings ]====//
-const pw = "base"; // Change to "nopw" or "no pw" to disable the password.
-
 //====[ Code Settings ]====//
 const customCode = 'SISTINEX' // replace must use 8 letters, no more or less
 
@@ -211,15 +208,6 @@ browser: ["Ubuntu", "Chrome", "20.0.04"],
 });
 
 if (!YLine.authState.creds.registered) {
-    if (pw !== "nopw" && pw !== "no pw") {
- console.log(chalk.blue.bold(`${imageAscii}`));
-        const password = await question(`\nEnter a valid password:\n`);
-        if (password !== pw) {
-            console.log(`✖️ Access Denied`);
-            process.exit();
-        }
-    }
-
 const phoneNumber = await question('Please enter your WhatsApp number, starting with 62:\n');
 let code = await YLine.requestPairingCode(phoneNumber, customCode);
 code = code?.match(/.{1,4}/g)?.join("-") || code;
