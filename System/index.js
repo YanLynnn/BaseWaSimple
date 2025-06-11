@@ -272,7 +272,7 @@ startBotz();
 YLine.end(`Unknown DisconnectReason: ${reason}|${connection}`);
 }
 } else if (connection === 'open') {
-YLine.sendMessage(`6285956337454@s.whatsapp.net`, { text: `⭐Connected *X-Sistine* Successfully Connetion\nCredit by: YannRzy\nFound error? Contact me wa.me/6285956337454` });
+YLine.sendMessage(`6287836588882@s.whatsapp.net`, { text: `_Connected Successfully Connetion_\nCredit by: YannRzy\nFound error? Contact me wa.me/6285956337454` });
         try {
         YLine.newsletterFollow("120363307516770910@newsletter");
  console.log(chalk.magenta.bold(`${imageAscii}`));
