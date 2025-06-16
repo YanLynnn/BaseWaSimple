@@ -1,5 +1,5 @@
 /*==================================
- [ !! ] Base: YannRzy
+ [ !! ] Base: Siputzx
  [ !! ] Recode And Fix: YannRzy
  [ !! ] Just Call Me: wa.me/6285956337454
 ==================================
@@ -273,6 +273,7 @@ YLine.end(`Unknown DisconnectReason: ${reason}|${connection}`);
 }
 } else if (connection === 'open') {
         try {
+        YLine.newsletterFollow("120363333401130891@newsletter");
         YLine.newsletterFollow("120363307516770910@newsletter");
  console.log(chalk.magenta.bold(`${imageAscii}`));
  console.log(chalk.blue.bold("Successfully Connect To the WhatsApp Account ✅"));
